@@ -1,0 +1,36 @@
+footer{
+    background: url(../../images/footer.jpg) center/cover;
+    padding-top: 80px;
+    color: white;
+    .nav{
+        padding-left: 20px;
+    }
+    .hover{
+        display: block;
+        text-decoration: none;
+        color: white;
+        line-height: 25px;
+        transition: 0.3s all ease-in-out;
+        &:hover{
+            transition: 0.3s all ease-in-out;
+            padding-left: 8px;
+        }
+    }
+    hr{
+        background-color: gray;
+        height: 1px;
+        border: none;
+    }
+    small{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+    }
+}
