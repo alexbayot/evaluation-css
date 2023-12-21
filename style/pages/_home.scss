@@ -1,0 +1,115 @@
+.red_background{
+    background-color: #ff0303;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.date{
+    color: gray;
+    font-style: italic;
+}
+.main-article{
+    h1{
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    img{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+}
+p{
+    color: gray;
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+.transparent_button{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 30px;
+    span{
+        font-weight: bold;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+}
+.social-media-icons{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 18px;
+    a{
+        color: gray;  
+    }
+}
+.section-title{
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 20px;   
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3a3a3a;
+}
+hr{
+    background-color: gray;
+    border: 0;
+    height: 1px;
+    margin-bottom: 40px;
+}
+.most-popular{
+    img{
+        width: 100%;
+        height: 398px;
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+.comments{
+    display: block;
+    margin-top: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.medium-side{
+    img{
+        width: 100%;
+        height: 340px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .red_background{
+        position: absolute;
+        z-index: 100;
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+    .transparency{
+        position: relative;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+    }
+    .medium-side-txt{
+        width: 300px;
+        font-size: 18px;
+        position: absolute;
+        left: 50%;
+        translate: -50%;
+        z-index: 10;
+        color: white;
+    }
+}
+.small-side{
+    display: flex;
+}
