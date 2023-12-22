@@ -1,5 +1,19 @@
 .top-nav{
     display: none;
+    a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        margin-left: 20px;
+        font-weight: bold;
+        &:hover{
+            color: #ff0303;
+        }
+        &:first-of-type{
+            color: #ff0303;
+            
+        }
+    }
 }
 .burger{
     margin-left: 15px;
@@ -15,6 +29,7 @@
     justify-content: center;
     padding: 10px;
     font-weight: bold;
+    
     .burger-menu{
         .menu{
             margin-right: 8px;
@@ -27,4 +42,27 @@
             }
         }
     }
+}
+@media screen and (min-width:1000px){
+    .burger{
+        display: none; 
+    }   
+    .top-nav{
+        margin-top: 20px;
+        display: contents;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 150px;
+        .search-icon_nav{
+            a{
+                color: black; 
+                font-weight: bold;
+                font-size: 20px; 
+            }
+            
+        }
+    }
+
 }

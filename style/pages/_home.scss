@@ -29,8 +29,7 @@
         &:hover{
             transition: 0.3s all ease-in-out;
             scale: 1.3;
-        }
-        
+        }  
     }
 }
 .box{
@@ -118,42 +117,46 @@ hr{
     font-weight: bold;
 }
 .medium-side{
+    position: relative;
     .box{
-        height: 450px;
+        height: 350px;
+        width: 100%;
         position: relative;
         margin-bottom: 30px;
     }
     img{
         width: 100%;
-        height: 450px;
+        height: 350px;
         margin-bottom: 20px;
         transition: 0.3s all ease-in-out;
+        }
         &:hover{
             transition: 0.3s all ease-in-out;
             scale: 1.3;
         }
-    }
-    .red_background{
-        position: absolute;
-        z-index: 100;
-        font-size: 12px;
-        padding: 8px 40px;
-    }
-    .transparency{
-        position: relative;
-        height: 30px;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 10;
-    }
-    .medium-side-txt{
-        width: 100%;
-        font-size: 18px;
-        position: absolute;
-        left: 40px;
-        z-index: 10;
-        color: white;
-    }
+        .red_background{
+            position: absolute;
+            z-index: 100;
+            font-size: 12px;
+            padding: 8px 40px;
+        }
+    }   
+.transparency{
+    position: absolute;
+    height: 30px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 10;
+    width: 100%;
 }
+.medium-side-txt{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    bottom: 5px;
+} 
 .small-side{
     display: flex;
     align-content: center;
@@ -265,12 +268,34 @@ form{
     margin-top: 100px;
     padding-top: 100px;
     .bottom-video{
+        position: relative;
         text-align: center;
+        .video2{
+            width: 100%;
+            height: 258px;
+            background: url(../images/.video2.jpg) center/cover;
+        }
+        .background-video{
+            width: 100%;
+            height: 258px;
+            background: url(../images/video1.jpg) center/cover;
+            &:hover{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    left: 0px;
+                    background-color: rgba(0,0,0,0.5);
+                }
+            }
+        }
         .box{
             height: 258px;
             width: 450px;
             margin: 0 auto;
-            position: relative;
+            position: relative; 
         }
         img{
             height: 258px;
@@ -283,6 +308,11 @@ form{
         }
         i{
             position: absolute;
+            right: 50%;
+            top: 35%;
+            translate: -50%,-50%;
+            z-index: 100;
+            color: white;
         }
         a{
           text-decoration: none;  
@@ -293,7 +323,70 @@ form{
             text-align: left;
             margin-left: 20px;
             color: black;
-            font-size: 18px;  
+            font-size: 18px; 
+            cursor: pointer; 
         }
+    }
+}
+
+@media screen and (min-width:1000px){
+    .main-article{
+        width: 70%;
+        h1{
+            font-size: 36px;   
+        }
+        .box{
+            height: 380px;
+            margin-top: 60px;
+        }
+        img{
+            width: 100%;
+            height: 380px;
+            transition: 0.3s all ease-in-out;
+            &:hover{
+                transition: 0.3s all ease-in-out;
+                scale: 1.3;
+            }  
+        }
+        .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social-media-icons{
+            margin-top: 0;
+            width: 20%;
+        }
+    }
+    .date{
+        font-size: 18px;
+    }
+    .most-popular{
+        width: 70%;
+         .popular{
+            display: flex;
+            justify-content: space-between;
+            .box{
+                height: 250px;
+                width: 110%;
+                margin-bottom: 40px;
+                margin-right: 50px;
+            }
+            img{
+                height: 250px;
+                margin-bottom: 30px;
+                transition: 0.3s all ease-in-out;
+                &:hover{
+                    transition: 0.3s all ease-in-out;
+                    scale: 1.3;
+                }
+            }
+            h2{
+                font-size: 30px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+         }
     }
 }
