@@ -118,29 +118,29 @@ hr{
 }
 .medium-side{
     position: relative;
+    .red_background{
+        top: 10px;
+        font-size: 12px;
+        padding: 8px 40px;
+        position: absolute;       
+    }  
     .box{
         height: 350px;
         width: 100%;
-        position: relative;
         margin-bottom: 30px;
+  
     }
     img{
         width: 100%;
         height: 350px;
         margin-bottom: 20px;
         transition: 0.3s all ease-in-out;
-        }
         &:hover{
             transition: 0.3s all ease-in-out;
             scale: 1.3;
         }
-        .red_background{
-            position: absolute;
-            z-index: 100;
-            font-size: 12px;
-            padding: 8px 40px;
-        }
-    }   
+    }  
+} 
 .transparency{
     position: absolute;
     height: 30px;
@@ -278,7 +278,7 @@ form{
         .background-video{
             width: 100%;
             height: 258px;
-            background: url(../images/video1.jpg) center/cover;
+            transition: 0.3s all ease-in-out;
             &:hover{
                 &::before{
                     content: "";
@@ -290,21 +290,16 @@ form{
                     background-color: rgba(0,0,0,0.5);
                 }
             }
+            &:hover{
+                transition: 0.3s all ease-in-out;
+                scale: 1.1;
+            }
         }
         .box{
             height: 258px;
             width: 450px;
             margin: 0 auto;
             position: relative; 
-        }
-        img{
-            height: 258px;
-            width: 450px;
-            transition: 0.3s all ease-in-out;
-            &:hover{
-                transition: 0.3s all ease-in-out;
-                scale: 1.1;
-            }
         }
         i{
             position: absolute;
@@ -328,10 +323,8 @@ form{
         }
     }
 }
-
 @media screen and (min-width:1000px){
     .main-article{
-        width: 70%;
         h1{
             font-size: 36px;   
         }
@@ -360,10 +353,9 @@ form{
         }
     }
     .date{
-        font-size: 18px;
+        font-size: 14px;
     }
     .most-popular{
-        width: 70%;
          .popular{
             display: flex;
             justify-content: space-between;
@@ -388,5 +380,104 @@ form{
                 cursor: pointer;
             }
          }
+    }
+    .subtitle{
+        width: 30%;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 260px 300px 260px;
+        gap: 30px;
+    }
+    .small-articles-bottom{
+        display: grid;
+        grid-template-columns: 130px 130px;
+        grid-template-rows: 322px 322px;
+        gap: 30px;
+        .small-article-bottom{
+            display: flex;
+            flex-direction: column;
+            img{
+                height: 130px;
+            }
+        }
+    }
+    .article-list-bottom{
+        .box{
+            height: 160px;
+            margin-bottom: 20px;
+        }
+        img{
+            height: 160px;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: 0.3s all ease-in-out;
+            &:hover{
+                transition: 0.3s all ease-in-out;
+                scale: 1.3;
+            }   
+        }
+    }
+    .bottom-videos{
+        .videos{
+            margin: 0 auto;
+            width: 960px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .bottom-video{
+            height: 245px;
+            width: 210px;
+            .box{
+                height: 146px;
+                width: 210px;
+                position: relative;
+            }
+            img{
+                height: 146px;
+                width: 210px;
+                transition: 0.3s all ease-in-out;
+                &:hover{
+                    transition: 0.3s all ease-in-out;
+                    scale: 1.1;
+                }
+            }
+            .video-txt{
+                padding-top: 10px;
+            }
+        }
+    }
+    .flex_wrapper{
+        width: 960px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: first baseline;
+    }
+    .left{
+        width:70%;
+        .popular{
+        .box{
+            height: 350px;
+        }
+        img{
+            height: 350px;
+        }
+    }
+    }
+    .right{
+        .section-title{
+            margin-top: 10px;
+        }
+        width: 28%;
+        .medium-side{
+            .box{
+                height: 250px;
+            }
+            img{
+                height: 250px;
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 footer{
     color: white;
+    position: relative;
     .background-footer{
        background: url(../../images/footer.jpg) center/cover;
        position: relative; 
@@ -49,5 +50,33 @@ footer{
             text-align: center;
             display: inline-block;
         }
+    }
+}
+.btt{
+    background-color: #ff0303;
+    width: 20px;
+    padding: 5px;
+    text-align: center;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    a{
+        color: white;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+    .navs{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+    }
+    small{
+        display: flex;
+        justify-content: center;
+        letter-spacing: 1px;
+        padding-bottom: 50px;
     }
 }

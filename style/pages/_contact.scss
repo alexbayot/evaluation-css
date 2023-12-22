@@ -1,9 +1,12 @@
 .title{
     margin-top: -80px;
     background-color: rgb(214, 214, 214);
-    padding: 20px ;
     margin-bottom: 80px;
+    width: 100%;
+    margin: 0 auto;
     .title-txt{
+        width: 95%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -34,11 +37,11 @@ form{
         transition: 0.3s all ease-in-out;
         font-weight: bold;
         cursor: pointer;
-        &:hover{
-        transition: 0.3s all ease-in-out;
-        color: #ff0303;
-        border: 2px solid #ff0303;
-        }
+            &:hover{
+                transition: 0.3s all ease-in-out;
+                color: #ff0303;
+                border: 2px solid #ff0303;
+            }
     }
 }
 .address{
@@ -49,6 +52,16 @@ form{
         color: gray;
     }
 }
-iframe{
+.map{
     width: 100%;
+}
+
+@media screen and (min-width:1000px){
+    .flex2{
+        display: flex;
+        justify-content: space-between;
+    }
+    iframe{
+        min-width: 960px;
+    }
 }

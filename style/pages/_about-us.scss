@@ -70,5 +70,28 @@
             transition: 0.3s all ease-in-out;
         }
     }
+}
 
+@media screen and (min-width:1000px){
+    .history{
+        display: flex;
+        width: 100%;
+    }
+    .our-team{
+        display: flex;
+        justify-content: space-between;
+        .team-member{
+            width: 23%;
+        }
+        .social-media-icons{
+            width: 40%;
+            font-size: 12px;
+        }
+    }
+    .join-our-team{
+        .our{
+            margin: 0 auto;
+            margin-bottom: 50px;
+        } 
+    }
 }

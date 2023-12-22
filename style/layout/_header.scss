@@ -18,6 +18,14 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        position: relative;
+        left: 55%;
+        translate: -50%;
+        .images{
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
         [alt="top-advert"]{
             padding-top: 40px;
             width: 60%;
@@ -26,7 +34,7 @@
         [alt="logo"]{
             margin-top:20px;
             margin-left: 20px;  
-            width: 28%;
+            width: 20%;
         }
     }
 }
